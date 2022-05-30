@@ -64,5 +64,5 @@ Only click here for enter:
 ### <h2>📸 Screenshot</h2>
 
 <div align="center">
-    <img src="https://cdn.discordapp.com/attachments/980802949221605390/980813632977903626/BMI_Calculator.png">
+    <img width="50%" height="50%" src="https://cdn.discordapp.com/attachments/980802949221605390/980813632977903626/BMI_Calculator.png">
 </div>
