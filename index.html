@@ -1,9 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>BMI test</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>BMI: Calculating Body Mass Index</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <section class="container">
+        <h1>BMI Table</h1>
+        <div class="infoBMI">
+            <p><strong>BMI</strong><br>
+                Less than 16<br>
+                Between 16 and 17<br>
+                Between 17 and 18,5<br>
+                Between 18,5 and 24,9<br>
+                Between 25 and 29,9<br>
+                Between 30 and 34,9<br>
+                Between 35 and 39,9<br>
+                More than 40<br>
+            </p>
+            <p class="infoClass"><strong>Result</strong><br>
+                Severe Thinness<br>
+                Moderate Thinness<br>
+                Mild Thinness<br>
+                Normal weight<br>
+                Overweight<br>
+                Obesity class I<br>
+                Obesity class II<br>
+                Obesity class III<br>
+            </p>
+        </div>
+        <h1>Calcule your BMI</h1>
+        <form action="/" class="form" id="form" method="post">
+            <label for="Height">Height:</label>
+            <input type="number" name="height" id="height" min="54" max="272" maxlength="3" placeholder="Height in Centimeters" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189 && event.keyCode !== 108 && event.keyCode !== 188 && event.keyCode !== 190"">
+
+            <label for="Weight">Weight:</label>
+            <input type="number" name="weight" id="weight" min="2" max="597" maxlength="6" placeholder="Weight in Kilograms" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189 && event.keyCode !== 108 && event.keyCode !== 188">
+            
+            <button type="submit" onclick="calculateBMI();">Calculate</button>
+            <div class="result"></div>
+        </form>
+    </section>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

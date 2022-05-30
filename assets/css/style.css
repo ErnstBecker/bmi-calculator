@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(9, 48, 56);
+    --error: rgb(200, 55, 55);
+    --success: rgb(55, 200, 55);
+    --info: rgb(59, 89, 152);
+    --site: rgb(174, 0, 0);
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 20px 20px 60px;
+}
+
+form input, form label, form button, form span{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 1rem;
+}
+
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus{
+    outline: 3px solid var(--primary-color);
+}
+
+form button{
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover{
+    background: var(--primary-color-darker);
+}
+
+span{
+    height: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.infoBMI{
+    display: flex;
+}
+
+.infoClass{
+    margin-left: 25%;
+}
+
+.error, .success, .info{
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.error{
+    background-color: var(--error);
+}
+
+.success{
+    background-color: var(--success);
+}
+
+.info{
+    background-color: var(--info);
+}
+
+.wiki{
+    font-weight: 700;
+    color: #fff;
+}
+
+.wiki:hover{
+    color: var(--site);
+}
