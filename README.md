@@ -37,8 +37,11 @@ The height provided must be in centimeters, and the weight in kilograms.
 
 ### <h2>📗 Running</h2>
 
-<a href="https://ernstbeckerneto-bmi.netlify.app/" rel="external" target="_blank"><h1>BMI Calculator</h1></a>
-  
+<h3>
+Only click here for enter:
+<a href="https://ernstbeckerneto-bmi.netlify.app/" rel="external" target="_blank">BMI Calculator</a>
+</h3>
+
 <hr>
 
 ### <h2>🚀 Technologies</h2>
